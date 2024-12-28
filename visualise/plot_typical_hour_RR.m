@@ -31,18 +31,18 @@ hold on
 plot(allocate.command, '--black', 'linewidth', linewidth);
 plot(allocate.P_tcl(1:range), 'b', 'linewidth', linewidth);
 
-x1 = xlabel('Time', 'FontSize', 13.5, 'FontName', 'Times New Roman', 'FontWeight', 'bold'); % Axis title
-y1 = ylabel('Adjusted Output (MW)', 'FontSize', 13.5, 'FontName', 'Times New Roman', 'FontWeight', 'bold');
+x1 = xlabel('Time', 'FontSize', 13.5, 'FontName', 'Arial'); % Axis title
+y1 = ylabel('Adjusted Output (MW)', 'FontSize', 13.5, 'FontName', 'Arial');
 ax = gca;
 ax.XTick = [0 : 150 : 900];
 ax.YColor = 'black';
 
 legend('Power mismatch', 'Control signal', 'TCL response', ...
-    'fontsize', 13.5, ...
+    'FontSize', 13.5, ...
+    'FontName', 'Arial', ...
     'Location', 'NorthOutside', ...
     'Orientation', 'vertical', ...
-    'NumColumns', 3, ...
-    'FontName', 'Times New Roman');
+    'NumColumns', 3);
 
 set(gca, "YGrid", "on");
 set(gca, "ylim", [-0.3, 0.3]);
@@ -59,7 +59,7 @@ figureWidth = 15;
 figureHeight = figureWidth * 2 / 4;
 set(gcf, 'Units', figureUnits, 'Position', [10 10 figureWidth figureHeight]);
 
-ax.FontName = 'Times New Roman';
-set(gcf, 'PaperSize', [13.8, 7.5]);
+ax.FontName = 'Arial';
+set(gcf, 'PaperSize', [15, 7.5]);
 
 saveas(gcf, 'typical_hour_RR_tcl.pdf');
