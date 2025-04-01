@@ -1,6 +1,8 @@
 # Integrating Fast-response Capability into Virtual Power Plant Operation for Ancillary Services
 
-Our paper "Integrating Fast-response Capability into Virtual Power Plant Operation for Ancillary Services" has been submitted to IEEE Powertech 2025. This repository contains the complete model (see `vpp_bidding_model.pdf`), code, and data. To run the code, you need to have MATLAB, GUROBI, and YALMIP installed.
+Cite: Qixing Liu, Ruike Lyu, Zhe Zhai, Yan Shen, Xue Liu, and Hongye Guo*. Integrating Fast-Response Capability into Virtual Power Plant Operation for Ancillary Services. IEEE PowerTech 2025 Conference, Kiel, Germany: IEEE, 2025. (accepted)
+
+This repository contains the complete model (see `vpp_bidding_model.pdf`), code, and data. To run the code, you need to have MATLAB, GUROBI, and YALMIP installed.
 
 ## Overview
 
